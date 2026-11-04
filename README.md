@@ -26,7 +26,7 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 
 Repositório da capacitação 2026.2 da área de Desktop da Asimov Jr.
 
-## Trilha da Capacitação 2026.2
+## Trilha da Capacitação Asimov Jr. 2026.2
 
 | Semana | Tema          | Entrega                         |
 | ------ | ------------- | ------------------------------- |
