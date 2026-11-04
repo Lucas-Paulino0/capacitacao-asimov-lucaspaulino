@@ -2,6 +2,13 @@
 
 Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo desde criança, quando comecei criando bots para Discord e participando de maratonas de programação. Gosto de construir ferramentas que resolvem problemas reais, como um sistema de compra de fichas para o Restaurante Universitário com pagamento via Mercado Pago e uma extensão de navegador que sincroniza minhas leituras com o AniList. Ainda estou explorando áreas, com interesse especial em Redes de Computadores, e hoje sou trainee da área de Desktop na capacitação 2026.2 da Asimov Jr.
 
+## Formação
+
+- **Bacharelado em Ciência da Computação** — Universidade Federal de Itajubá (UNIFEI)
+  2025 – 2028 (previsão) · 4º período
+- **Ensino Médio com ênfase em Matemática e Tecnologias** — Colégio Marista Varginha
+  2022 – 2024
+
 Repositório da capacitação 2026.2 da área de Desktop da Asimov Jr.
 
 ## Capacitação
