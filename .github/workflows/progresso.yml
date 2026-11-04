@@ -1,0 +1,31 @@
+name: Atualiza progresso da capacitação
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixa o repositório
+        uses: actions/checkout@v5
+
+      - name: Atualiza o README
+        run: python3 scripts/atualiza_progresso.py
+
+      - name: Commita se houve mudança
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "Nada para commitar"
+          else
+            git commit -m "docs: atualiza progresso da capacitação"
+            git push
+          fi
