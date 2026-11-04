@@ -9,6 +9,15 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 - **Ensino Médio com ênfase em Matemática e Tecnologias** — Colégio Marista Varginha
   2022 – 2024
 
+## Habilidades
+
+- **Linguagens:** Python, C, C++, JavaScript, TypeScript, PHP, Java
+- **Web:** HTML, CSS, React.js, Node.js
+- **Banco de dados:** MySQL, PostgreSQL
+- **Integrações:** APIs REST, GraphQL, Mercado Pago (webhooks)
+- **Ferramentas:** Git, GitHub
+- **Fundamentos:** Algoritmos, Estruturas de Dados, Grafos
+
 Repositório da capacitação 2026.2 da área de Desktop da Asimov Jr.
 
 ## Capacitação
