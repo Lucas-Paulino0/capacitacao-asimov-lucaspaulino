@@ -20,7 +20,7 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 
 ## Contatos
 
-- **E-mail:** [lucas.paulino07777@gmail.com](mailto:lucas.paulino07777@gmail.com)
+- **E-mail:** [d2025013290@unifei.edu.br](mailto:d2025013290@unifei.edu.br)
 - **LinkedIn:** [linkedin.com/in/lucas-paulino-842162367/](https://www.linkedin.com/in/lucas-paulino-842162367/)
 - **GitHub:** [Lucas-Paulino0](https://github.com/Lucas-Paulino0)
 
