@@ -21,12 +21,10 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 ## Contatos
 
 - **E-mail:** [lucas.paulino07777@gmail.com](mailto:lucas.paulino07777@gmail.com)
-- **LinkedIn:** [linkedin.com/in/SEU-PERFIL](https://www.linkedin.com/in/lucas-paulino-842162367/)
+- **LinkedIn:** [linkedin.com/in/lucas-paulino-842162367/](https://www.linkedin.com/in/lucas-paulino-842162367/)
 - **GitHub:** [Lucas-Paulino0](https://github.com/Lucas-Paulino0)
 
-Repositório da capacitação 2026.2 da área de Desktop da Asimov Jr.
-
-## Capacitação Asimov Jr.
+## Trilha da Capacitação Asimov Jr. 2026.2
 
 | Semana | Tema          | Entrega                         |
 | ------ | ------------- | ------------------------------- |
