@@ -27,9 +27,7 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 ## Trilha da Capacitação Asimov Jr. 2026.2
 
 <!-- PROGRESSO:INICIO -->
-
 **Progresso:** █░░░░░░░░░ 1/10 semanas
-
 <!-- PROGRESSO:FIM -->
 
 | Semana | Tema          | Entrega                         |
