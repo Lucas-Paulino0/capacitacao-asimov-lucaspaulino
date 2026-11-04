@@ -26,6 +26,9 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 
 ## Trilha da Capacitação Asimov Jr. 2026.2
 
+<!-- PROGRESSO:INICIO -->
+<!-- PROGRESSO:FIM -->
+
 | Semana | Tema          | Entrega                         |
 | ------ | ------------- | ------------------------------- |
 | 01     | Git e GitHub  | [semana-01-git](semana-01-git/) |
