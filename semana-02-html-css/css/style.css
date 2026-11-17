@@ -1,0 +1,303 @@
+/* ========== Variáveis ========== */
+:root {
+  --cor-fundo: #f7f8fc;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1f2430;
+  --cor-texto-suave: #5b6275;
+  --cor-primaria: #4f46e5;
+  --cor-sobre-primaria: #ffffff;
+  --cor-borda: #e3e6ef;
+
+  --fonte-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fonte-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+
+  --raio: 12px;
+  --largura-max: 1100px;
+}
+
+/* Modo escuro: só redefine as variáveis */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #12141c;
+    --cor-superficie: #1b1e29;
+    --cor-texto: #e6e8ef;
+    --cor-texto-suave: #a4abbd;
+    --cor-primaria: #8b85ff;
+    --cor-sobre-primaria: #12141c;
+    --cor-borda: #2c3040;
+  }
+}
+
+/* ========== Base ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-base);
+  line-height: 1.6;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--cor-primaria);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 3px;
+}
+
+/* ========== Cabeçalho e menu ========== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+nav {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav > a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--cor-texto-suave);
+  transition: color 0.2s;
+}
+
+nav ul a:hover {
+  color: var(--cor-primaria);
+}
+
+/* ========== Seções ========== */
+main > section {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  scroll-margin-top: 4rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem;
+}
+
+#inicio {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+#inicio p {
+  font-size: 1.15rem;
+  color: var(--cor-texto-suave);
+  max-width: 40rem;
+}
+
+#inicio a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--raio);
+  background: var(--cor-primaria);
+  color: var(--cor-sobre-primaria);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+#inicio a:hover {
+  transform: translateY(-2px);
+}
+
+#sobre img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* ========== Habilidades (Grid) ========== */
+#habilidades {
+  display: grid;
+  gap: 1rem;
+}
+
+#habilidades h2 {
+  grid-column: 1 / -1;
+}
+
+.habilidades-grupo {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+}
+
+.habilidades-grupo h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.habilidades-grupo ul,
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.habilidades-grupo li,
+.tags li {
+  font-family: var(--fonte-mono);
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+}
+
+/* ========== Projetos (Grid + cards em Flexbox) ========== */
+.projetos-lista {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.projeto img {
+  border-radius: 8px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+
+.projeto h3 {
+  margin: 0;
+}
+
+.projeto p {
+  margin: 0;
+  color: var(--cor-texto-suave);
+}
+
+.projeto-futuro {
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: 2px dashed var(--cor-borda);
+}
+
+/* ========== Contato e rodapé ========== */
+#contato ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#contato a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  background: var(--cor-superficie);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.25rem;
+  color: var(--cor-texto-suave);
+  border-top: 1px solid var(--cor-borda);
+}
+
+/* ========== Responsividade ========== */
+@media (min-width: 768px) {
+  #habilidades {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projetos-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projetos-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Respeita quem desativou animações no sistema */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
