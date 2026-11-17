@@ -9,6 +9,7 @@
   --cor-borda: #e3e6ef;
   --cor-selo-fundo: #fef3c7;
   --cor-selo-texto: #92400e;
+  --icone-tema: "🌙";
 
   --fonte-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --fonte-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
@@ -17,7 +18,7 @@
   --largura-max: 1100px;
 }
 
-/* Modo escuro: só redefine as variáveis */
+/* Tema escuro automático: segue o tema do sistema */
 @media (prefers-color-scheme: dark) {
   :root {
     --cor-fundo: #12141c;
@@ -29,6 +30,37 @@
     --cor-borda: #2c3040;
     --cor-selo-fundo: #3b2a0a;
     --cor-selo-texto: #fcd34d;
+    --icone-tema: "☀️";
+  }
+}
+
+/* Botão marcado com o sistema claro: força o tema escuro */
+:root:has(#tema:checked) {
+  --cor-fundo: #12141c;
+  --cor-superficie: #1b1e29;
+  --cor-texto: #e6e8ef;
+  --cor-texto-suave: #a4abbd;
+  --cor-primaria: #8b85ff;
+  --cor-sobre-primaria: #12141c;
+  --cor-borda: #2c3040;
+  --cor-selo-fundo: #3b2a0a;
+  --cor-selo-texto: #fcd34d;
+  --icone-tema: "☀️";
+}
+
+/* Botão marcado com o sistema escuro: força o tema claro */
+@media (prefers-color-scheme: dark) {
+  :root:has(#tema:checked) {
+    --cor-fundo: #f7f8fc;
+    --cor-superficie: #ffffff;
+    --cor-texto: #1f2430;
+    --cor-texto-suave: #5b6275;
+    --cor-primaria: #4f46e5;
+    --cor-sobre-primaria: #ffffff;
+    --cor-borda: #e3e6ef;
+    --cor-selo-fundo: #fef3c7;
+    --cor-selo-texto: #92400e;
+    --icone-tema: "🌙";
   }
 }
 
@@ -49,6 +81,7 @@ body {
   line-height: 1.6;
   background: var(--cor-fundo);
   color: var(--cor-texto);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 img {
@@ -109,6 +142,46 @@ nav ul a {
 
 nav ul a:hover {
   color: var(--cor-primaria);
+}
+
+/* ========== Botão de tema (sem JavaScript) ========== */
+.tema-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 50%;
+  background: var(--cor-fundo);
+  cursor: pointer;
+}
+
+.tema-icone::before {
+  content: var(--icone-tema);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.tema-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.tema-toggle:has(.tema-input:focus-visible) {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* ========== Seções ========== */
