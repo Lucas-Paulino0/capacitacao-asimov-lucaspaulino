@@ -7,6 +7,8 @@
   --cor-primaria: #4f46e5;
   --cor-sobre-primaria: #ffffff;
   --cor-borda: #e3e6ef;
+  --cor-selo-fundo: #fef3c7;
+  --cor-selo-texto: #92400e;
 
   --fonte-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --fonte-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
@@ -25,6 +27,8 @@
     --cor-primaria: #8b85ff;
     --cor-sobre-primaria: #12141c;
     --cor-borda: #2c3040;
+    --cor-selo-fundo: #3b2a0a;
+    --cor-selo-texto: #fcd34d;
   }
 }
 
@@ -153,6 +157,10 @@ h2 {
   transform: translateY(-2px);
 }
 
+#sobre p {
+  max-width: 45rem;
+}
+
 #sobre img {
   width: 160px;
   height: 160px;
@@ -225,7 +233,7 @@ h2 {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
-.projeto img {
+.projeto-img img {
   border-radius: 8px;
   aspect-ratio: 16 / 10;
   object-fit: cover;
@@ -241,11 +249,74 @@ h2 {
   color: var(--cor-texto-suave);
 }
 
+.selo {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cor-selo-fundo);
+  color: var(--cor-selo-texto);
+  vertical-align: middle;
+}
+
 .projeto-futuro {
   justify-content: center;
   text-align: center;
   background: transparent;
   border: 2px dashed var(--cor-borda);
+}
+
+/* ========== Imagem ampliada (Popover) ========== */
+.projeto-img {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  border-radius: 8px;
+}
+
+.projeto-img:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 3px;
+}
+
+.lightbox {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow: visible;
+}
+
+.lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.lightbox-fechar {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /* ========== Contato e rodapé ========== */
