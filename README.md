@@ -33,7 +33,7 @@ Sou estudante de Ciência da Computação na UNIFEI (4º período) e programo de
 | Semana | Tema          | Entrega                         |
 | ------ | ------------- | ------------------------------- |
 | 01     | Git e GitHub  | [semana-01-git](semana-01-git/) |
-| 02     | HTML e CSS    | em breve                        |
+| 02 | HTML e CSS | [semana-02-html-css](semana-02-html-css/) · [site](https://lucas-paulino0.github.io/capacitacao-asimov-lucaspaulino/semana-02-html-css/) |
 | 03     | TypeScript    | em breve                        |
 | 04     | Tailwind CSS  | em breve                        |
 | 05     | Angular Pt.1  | em breve                        |
