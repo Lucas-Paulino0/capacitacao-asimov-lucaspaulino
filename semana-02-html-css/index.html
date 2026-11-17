@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Lucas Paulino, estudante de Ciência da Computação na UNIFEI."
+    />
+    <title>Lucas Paulino | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#inicio">Lucas Paulino</a>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h1>Lucas Paulino</h1>
+        <p>
+          Estudante de Ciência da Computação na UNIFEI, construindo ferramentas
+          que resolvem problemas reais.
+        </p>
+        <a href="#projetos">Ver projetos</a>
+      </section>
+
+      <section id="sobre">
+        <h2>Sobre mim</h2>
+        <img
+          src="img/image.png"
+          alt="Foto de Lucas Paulino"
+          width="300"
+          height="300"
+        />
+        <p>
+          Sou estudante de Ciência da Computação na UNIFEI (4º período) e
+          programo desde criança, quando comecei criando bots para Discord e
+          participando de maratonas de programação.
+        </p>
+        <p>
+          Gosto de construir ferramentas que resolvem problemas reais, como um
+          sistema de compra de fichas para o Restaurante Universitário e uma
+          extensão de navegador que sincroniza minhas leituras com o AniList.
+        </p>
+        <p>
+          Ainda estou explorando áreas, com interesse especial em Redes de
+          Computadores, e hoje sou trainee da área de Desktop na capacitação
+          2026.2 da Asimov Jr.
+        </p>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-grupo">
+          <h3>Linguagens</h3>
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div class="habilidades-grupo">
+          <h3>Web</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="habilidades-grupo">
+          <h3>Banco de dados</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="habilidades-grupo">
+          <h3>Integrações</h3>
+          <ul>
+            <li>APIs REST</li>
+            <li>GraphQL</li>
+            <li>Mercado Pago (webhooks)</li>
+          </ul>
+        </div>
+        <div class="habilidades-grupo">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+        <div class="habilidades-grupo">
+          <h3>Fundamentos</h3>
+          <ul>
+            <li>Algoritmos</li>
+            <li>Estruturas de Dados</li>
+            <li>Grafos</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-lista">
+          <article class="projeto">
+            <button
+              class="projeto-img"
+              popovertarget="img-anilist"
+              aria-label="Ampliar imagem da NexusToons Sync"
+            >
+              <img
+                src="img/projeto-anilist.webp"
+                alt="Painel da extensão NexusToons Sync conectado ao AniList, com sincronização automática ativada e lista de títulos para vínculo manual"
+                width="962"
+                height="694"
+                loading="lazy"
+              />
+            </button>
+            <div id="img-anilist" class="lightbox" popover>
+              <img
+                src="img/projeto-anilist.webp"
+                alt="Painel da extensão NexusToons Sync conectado ao AniList, com sincronização automática ativada e lista de títulos para vínculo manual"
+                width="962"
+                height="694"
+              />
+              <button
+                class="lightbox-fechar"
+                popovertarget="img-anilist"
+                popovertargetaction="hide"
+                aria-label="Fechar imagem"
+              >
+                ×
+              </button>
+            </div>
+            <h3>NexusToons Sync</h3>
+            <p>
+              Extensão de navegador que detecta o fim de cada capítulo lido e
+              registra o progresso no AniList automaticamente. Quando um título
+              tem nome diferente entre idiomas, permite o vínculo manual.
+            </p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>API GraphQL do AniList</li>
+            </ul>
+          </article>
+
+          <article class="projeto">
+            <button
+              class="projeto-img"
+              popovertarget="img-ru"
+              aria-label="Ampliar imagem do sistema de fichas do RU"
+            >
+              <img
+                src="img/projeto-ru.webp"
+                alt="Protótipo da tela de compra de fichas do RU, com saldo, cardápio da semana e confirmação de compra"
+                width="1599"
+                height="899"
+                loading="lazy"
+              />
+            </button>
+            <div id="img-ru" class="lightbox" popover>
+              <img
+                src="img/projeto-ru.webp"
+                alt="Protótipo da tela de compra de fichas do RU, com saldo, cardápio da semana e confirmação de compra"
+                width="1599"
+                height="899"
+              />
+              <button
+                class="lightbox-fechar"
+                popovertarget="img-ru"
+                popovertargetaction="hide"
+                aria-label="Fechar imagem"
+              >
+                ×
+              </button>
+            </div>
+            <h3>Fichas do RU</h3>
+            <p>
+              Sistema de compra de fichas para o Restaurante Universitário, com
+              pagamento pelo Mercado Pago e confirmação automática via webhook.
+              Imagem do protótipo da interface.
+            </p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Mercado Pago (webhooks)</li>
+            </ul>
+          </article>
+
+          <article class="projeto">
+            <button
+              class="projeto-img"
+              popovertarget="img-civilcore"
+              aria-label="Ampliar imagem do mod CivilCore"
+            >
+              <img
+                src="img/projeto-civilcore.webp"
+                alt="Conceito da interface do Mural de Comércio do mod CivilCore, com abas de compras, vendas e serviços e uma lista de anúncios entre jogadores"
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+            </button>
+            <div id="img-civilcore" class="lightbox" popover>
+              <img
+                src="img/projeto-civilcore.webp"
+                alt="Conceito da interface do Mural de Comércio do mod CivilCore, com abas de compras, vendas e serviços e uma lista de anúncios entre jogadores"
+                width="1600"
+                height="1000"
+              />
+              <button
+                class="lightbox-fechar"
+                popovertarget="img-civilcore"
+                popovertargetaction="hide"
+                aria-label="Fechar imagem"
+              >
+                ×
+              </button>
+            </div>
+            <h3>CivilCore <span class="selo">Em desenvolvimento</span></h3>
+            <p>
+              Mod de civilização para Minecraft que adiciona um Mural de
+              Comércio: jogadores publicam pedidos de compra, ofertas de venda e
+              serviços, negociam propostas e registram contratos assinados num
+              item próprio. Os dados ficam salvos no servidor e são
+              sincronizados entre os jogadores. Imagem do conceito da interface.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>NeoForge 1.21.1</li>
+              <li>Multiplayer (pacotes de rede)</li>
+            </ul>
+            <a
+              href="https://github.com/Lucas-Paulino0/CivilCore"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver no GitHub</a
+            >
+          </article>
+
+          <article class="projeto projeto-futuro">
+            <h3>Próximo projeto</h3>
+            <p>
+              Em breve: os projetos desenvolvidos durante a capacitação da
+              Asimov Jr.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <ul>
+          <li>
+            <a href="mailto:lucas.paulino07777@gmail.com"
+              >lucas.paulino07777@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lucas-paulino-842162367/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Lucas-Paulino0"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Lucas Paulino</p>
+    </footer>
+  </body>
+</html>
